@@ -1,0 +1,57 @@
+snippet tex "general latex doc" b
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+		Homework: \\\
+		Course: \\\
+		Instructor: \\\
+		Author: Jeffrey Ahn \\\
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+\end{document}
+endsnippet
+
+snippet table "general table" b
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+ \hline
+ cell1 & cell2 & cell3 \\\
+ cell4 & cell5 & cell6 \\\
+ cell7 & cell8 & cell9 \\\
+ \hline
+\end{tabular}
+\end{center}
+endsnippet
+
+snippet cpp "add c++ syntax into latex"
+\lstset { %
+    language=C++,
+    tabsize=2,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    keywordstyle=\color[rgb]{0,0,1},
+    numberstyle=\color[rgb]{0.205, 0.142, 0.73},
+		commentstyle=\color[rgb]{0.1,.6,.5},
+		stringstyle=\color{red},
+    basicstyle=\footnotesize % basic font setting
+}
+\begin{lstlisting}
+\end{lstlisting}
+endsnippet
+
+snippet begin "adds \begin and \end tags"
+\begin{$1}
+\end{$1}
+endsnippet
